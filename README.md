@@ -2,6 +2,7 @@
 The source code and the details of our system runs for AffCon2019, CL-AFF SHARED TASK: IN PURSUIT OF HAPPINESS
 
 ## Autoencoder Model
+<blockquote> 
 5 hidden layers: 512-256-128-64-128-256-512 
 word dictionary size: 512
 optimizer: SGD
@@ -10,7 +11,7 @@ loss function: Categorical Cross Entropy
 batch size: 64
 epoch: 30
 normalization: None
-
+</blockquote>
 ## System Run Configuration
 
   Run 1. social trained with svm-linear and combined data & agency trained with svm rbf and original data
