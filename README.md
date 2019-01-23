@@ -17,13 +17,16 @@ The source code and the details of our system runs for AffCon2019, CL-AFF SHARED
 	Algorithm: SVM
 	gamma: 0.1
 	loss function: Categorical Cross Entropy
-	For agency, the labeled train data were randomly selected into two splits to balance yes/no classes
 	
-	Run 1. 	social trained with linear-kernel and combined data 
-	agency trained with rbf-kernel and original data
-  	Run 2. social trained with linear-kernel combined data & agency trained with rbf-kernel and original data
-  	Run 3. social trained with linear-kernel combined data & agency trained with rbf-kernel and combined data
-  	Run 4. social trained with linear-kernel combined data & agency trained with rbf-kernel and combined data
+	Run No.	label	SVM-kernel 	train data
+	1 	social 	linear 		combined data 
+		agency 	rbf 		original data
+  	2 	social  linear 		combined data 
+		agency 	rbf 		original data
+  	3 	social 	linear 		combined data 
+		agency 	rbf  		combined data
+  	4 	social 	linear 		combined data
+		agency 	rbf 		combined data
 
 	social	train data		kernel	
 	1	combined		linear	
