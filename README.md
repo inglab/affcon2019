@@ -19,25 +19,13 @@ The source code and the details of our system runs for AffCon2019, CL-AFF SHARED
 	loss function: Categorical Cross Entropy
 	
 	Run No.	label	SVM-kernel 	train data
-	1 	social 	linear 		combined data 
-		agency 	rbf 		original data
-  	2 	social  linear 		combined data 
-		agency 	rbf 		original data
-  	3 	social 	linear 		combined data 
-		agency 	rbf  		combined data
-  	4 	social 	linear 		combined data
-		agency 	rbf 		combined data
+	1 	social 	linear 		combined  
+		agency 	rbf 		original  (dataset 1)
+  	2 	social  linear 		combined  
+		agency 	rbf 		original  (dataset 2)
+  	3 	social 	linear 		combined  
+		agency 	rbf  		combined  (dataset 1)
+  	4 	social 	linear 		combined 
+		agency 	rbf 		combined  (dataset 2)
 
-	social	train data		kernel	
-	1	combined		linear	
-	2	combined		linear	
-	3	combined		linear	
-	4	combined		linear	
-						
-	agency	train data		kernel	
-	1	original (dataset 1)	rbf	
-	2	original (dataset 2)	rbf	
-	3	combined (dataset 1)	rbf	
-	4	combined (dataset 2)	rbf	
-
-Note: the original agency 
+Note: the agency class was imbalanced in the labeled train set. We created two datasets via random under-sampling. 
