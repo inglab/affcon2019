@@ -13,19 +13,28 @@ The source code and the details of our system runs for AffCon2019, CL-AFF SHARED
 
 ## System Run Configuration
 
-	Run 1. social trained with svm-linear and combined data & agency trained with svm rbf and original data
-  	Run 2. social svm linear combined & agency svm rbf original
-  	Run 3. social svm linear combined & agency svm rbf combined
-  	Run 4. social svm linear combined & agency svm rbf combined
+	Optimizer: SGD
+	Algorithm: SVM
+	gamma: 0.1
+	loss function: Categorical Cross Entropy
+	For agency, the labeled train data were randomly selected into two splits to balance yes/no classes
+	
+	Run 1. 	social trained with linear-kernel and combined data 
+	agency trained with rbf-kernel and original data
+  	Run 2. social trained with linear-kernel combined data & agency trained with rbf-kernel and original data
+  	Run 3. social trained with linear-kernel combined data & agency trained with rbf-kernel and combined data
+  	Run 4. social trained with linear-kernel combined data & agency trained with rbf-kernel and combined data
 
-	social	optimizer	loss	svm_train	kernel	gamma
-	1	sgd	categorical_cross_entropy	combined	linear	0.1
-	2	sgd	categorical_cross_entropy	combined	linear	0.1
-	3	sgd	categorical_cross_entropy	combined	linear	0.1
-	4	sgd	categorical_cross_entropy	combined	linear	0.1
+	social	train data		kernel	
+	1	combined		linear	
+	2	combined		linear	
+	3	combined		linear	
+	4	combined		linear	
 						
-	agency	optimizer	loss	svm_train	kernel	gamma
-	1	sgd	categorical_cross_entropy	original (split 1)	rbf	0.1
-	2	sgd	categorical_cross_entropy	original (split 2)	rbf	0.1
-	3	sgd	categorical_cross_entropy	combined (split 1)	rbf	0.1
-	4	sgd	categorical_cross_entropy	combined (split 2)	rbf	0.1
+	agency	train data		kernel	
+	1	original (dataset 1)	rbf	
+	2	original (dataset 2)	rbf	
+	3	combined (dataset 1)	rbf	
+	4	combined (dataset 2)	rbf	
+
+Note: the original agency 
