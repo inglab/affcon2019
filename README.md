@@ -1,5 +1,7 @@
 # AffCon2019 Shared Task
 The source code and the details of our system runs for AffCon2019, CL-AFF SHARED TASK: IN PURSUIT OF HAPPINESS
+Runs the model on the Happy DB dataset (https://github.com/kj2013/claff-happydb). Please cite the original paper when using the data.
+
 
 ## Autoencoder Model Configuration
 	5 hidden layers: 512-256-128-64-128-256-512 
